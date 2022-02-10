@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="main-wrap">
+			<div class="content-wrap">
+				<div class="form-wrap col-sm-12 col-xs-12 col-md-8">
+					<!-- Tabs Header -->
+					<nav class="nav nav-pills flex-column flex-sm-row tabs">
+						<span class="flex-sm-fill text-sm-center nav-link active tab-link"
+							>Login</span
+						>
+						<span class="flex-sm-fill text-sm-center nav-link tab-link"
+							>Register</span
+						>
+					</nav>
+
+					<!-- Tab Content -->
+					<div class="tab-content mt-3">
+						<!-- Content -->
+						<div class="content">
+							<div class="card-body p-0">
+								<form name="loginForm" id="loginForm" class="card p-3">
+									<div class="form-group mb-3">
+										<label for="email" class="form-label">Email address</label>
+										<input
+											type="email"
+											class="form-control"
+											id="email"
+											aria-describedby="emailHelp"
+											placeholder="Enter email"
+											data-required="email"
+											data-invalid-message="Please provide valid email example@example.com"
+										/>
+									</div>
+									<div class="form-group mb-3">
+										<label for="password" class="form-label">Password</label>
+										<input
+											type="password"
+											class="form-control"
+											id="password"
+											placeholder="Password"
+											data-required="password"
+										/>
+									</div>
+									<button type="submit" class="btn btn-primary" id="formBtn">
+										Log In
+									</button>
+								</form>
+							</div>
+						</div>
+						<!-- Content -->
+						<div class="content">
+							<div class="card-body p-0">
+								<form name="registerForm" id="registerForm" class="card p-3">
+									<div class="mb-3">
+										<label for="regEmail" class="form-label"
+											>Email address</label
+										>
+										<input
+											type="email"
+											class="form-control"
+											id="regEmail"
+											aria-describedby="emailHelp"
+											placeholder="Enter email"
+											data-required="email"
+											data-invalid-message="Please provide valid email example@example.com"
+										/>
+									</div>
+
+									<!-- User Cridentials -->
+									<div class="d-md-flex justify-content-between mb-3">
+										<div class="mb-3">
+											<label for="first_name" class="form-label"
+												>First Name</label
+											>
+											<input
+												type="text"
+												class="form-control"
+												id="first_name"
+												aria-describedby="first_nameHelp"
+												placeholder="Enter First Name"
+												data-required="first_name"
+											/>
+										</div>
+										<div>
+											<label for="last_name" class="form-label"
+												>Last Name</label
+											>
+											<input
+												type="text"
+												class="form-control"
+												id="last_name"
+												aria-describedby="last_nameHelp"
+												placeholder="Enter Last Name"
+												data-required="last_name"
+											/>
+										</div>
+									</div>
+
+									<!-- Gender -->
+									<div class="d-flex align-items-center mb-3">
+										<span>Gender:</span>
+										<div class="form-check ms-3">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="radio"
+												id="male"
+											/>
+											<label class="form-check-label" for="male"> Male </label>
+										</div>
+										<div class="form-check ms-3">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="radio"
+												id="female"
+											/>
+											<label class="form-check-label" for="female">
+												Female
+											</label>
+										</div>
+									</div>
+
+									<!-- Date and Nickname -->
+									<div class="d-md-flex justify-content-between mb-3">
+										<div class="mb-3">
+											<label for="nickname" class="form-label">Nickname</label>
+											<input
+												type="text"
+												class="form-control"
+												id="nickname"
+												aria-describedby="nicknameHelp"
+												placeholder="Enter nickname"
+												data-required="nickname"
+											/>
+										</div>
+										<div>
+											<label for="date" class="form-label">Date</label>
+											<input
+												type="date"
+												class="form-control"
+												id="date"
+												aria-describedby="dateHelp"
+												placeholder="Choose date"
+												data-required="date"
+											/>
+										</div>
+									</div>
+
+									<!-- Phone and Password -->
+									<div class="d-md-flex justify-content-between mb-3">
+										<div class="mb-3">
+											<label for="phone" class="form-label">Phone</label>
+											<input
+												type="text"
+												class="form-control"
+												id="phone"
+												aria-describedby="phoneHelp"
+												placeholder="Enter phone"
+												data-required="phone"
+											/>
+										</div>
+										<div class="mb-3">
+											<label for="regPassword" class="form-label"
+												>Password</label
+											>
+											<input
+												type="password"
+												class="form-control"
+												id="regPassword"
+												aria-describedby="regPasswordHelp"
+												placeholder="Enter passwrod"
+												data-required="password"
+											/>
+										</div>
+									</div>
+
+									<!-- City and Country -->
+									<div class="mb-3 d-md-flex justify-content-between">
+										<div class="mb-3">
+											<label for="country" class="form-label">Country</label>
+											<input
+												class="form-control"
+												list="countries"
+												id="country"
+												placeholder="Type to search..."
+												data-required="country"
+											/>
+											<datalist id="countries"></datalist>
+										</div>
+										<div class="mb-3">
+											<label for="city" class="form-label">City</label>
+											<input
+												class="form-control"
+												list="cities"
+												id="city"
+												placeholder="Type to search..."
+												disabled
+												data-required="city"
+											/>
+											<datalist id="cities">
+												<!-- <option value="San Francisco"></option>
+                      <option value="New York"></option>
+                      <option value="Seattle"></option>
+                      <option value="Los Angeles"></option>
+                      <option value="Chicago"></option> -->
+											</datalist>
+										</div>
+									</div>
+
+									<button
+										type="submit"
+										class="btn btn-primary"
+										id="registerBtn"
+									>
+										Sign Up
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-wrap">
+				<img
+					src="https://images.unsplash.com/photo-1527769929977-c341ee9f2033?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+					alt=""
+				/>
+			</div>
+		</div>
+	</body>
+</html>
